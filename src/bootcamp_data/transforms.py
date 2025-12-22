@@ -7,3 +7,19 @@ def enforce_schema(df: pd. DataFrame) -> pd. DataFrame:
         quantity=pd. to_numeric(df["quantity"], errors="coerce") .astype("Int64"), 
         
         )
+
+
+def missingness_report(df: pd.DataFrame) -> pd.DataFrame:
+    return (
+        df.isna().sum()
+        .rename("n_missing")
+        .to_frame()
+        .assign(p_missing=lambda t: t["n_missing"] / len(df))
+        .sort_values("p_missing", ascending=False)
+    )
+
+def add_missing_flags(df: pd.DataFrame, cols: list[str]) -> pd.DataFrame:
+    out = df.copy()
+    for c in cols:
+        out[f"{c}__isna"] = out[c].isna()
+    return out
