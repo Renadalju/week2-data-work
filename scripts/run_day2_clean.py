@@ -26,8 +26,8 @@ def main() -> None:
     p = make_paths(ROOT)
 
     log.info("Loading raw inputs")
-    orders_raw = read_orders_csv(p.raw / "orders_s.csv")
-    users = read_users_csv(p.raw / "users_s.csv")
+    orders_raw = read_orders_csv(p.raw / "orders.csv")
+    users = read_users_csv(p.raw / "users.csv")
     log.info("Rows: orders_raw=%s, users=%s", len(orders_raw), len(users))
 
     require_columns(orders_raw, ["order_id","user_id","amount","quantity","created_at","status"])

@@ -20,8 +20,8 @@ def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
 
     p = make_paths(ROOT)
-    orders = enforce_schema(read_orders_csv(p.raw / "orders_s.csv"))
-    users = read_users_csv(p.raw / "users_s.csv")
+    orders = enforce_schema(read_orders_csv(p.raw / "orders.csv"))
+    users = read_users_csv(p.raw / "users.csv")
 
     log.info("Loaded rows: orders=%s users=%s", len(orders), len(users))
     log.info("Orders dtypes:\n%s", orders.dtypes)
