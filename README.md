@@ -68,7 +68,7 @@ uv run jupyter lab
 ![Revenue by Country](reports/figures/revenue_by_country.png)
 
 ### Revenue Over Time (Monthly)
-![Revenue Over Time](reports/figures/revenue_monthly.png)
+![Revenue Over Time](reports/figures/revenue_trend_monthly.png)
 
 ### Order Amount Distribution (Winsorized)
-![Order Amount Distribution](reports/figures/amount_distribution_winsorized.png)
+![Order Amount Distribution](reports/figures/amount_hist_winsor.png)
