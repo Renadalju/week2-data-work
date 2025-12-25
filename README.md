@@ -54,11 +54,8 @@ uv run python scripts/run_day3_build_analytics.py
 ### Running Notebooks with uv
 1) start jypter using :
 ```bash 
-uv run jupyter lab
+uv run jupyter lab notebooks 
 ```
----
-
-2) then open the file located at week2-data-work\notebooks\eda.ipynb and run it 
 
 ---
 
