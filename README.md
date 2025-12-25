@@ -25,7 +25,7 @@ uv sync
 ```
 ---
 
-3) If you want to run the pipeline on NEW data:
+## If you want to run the pipeline on NEW data:
 
 ### A) Add your new raw data
 Place your files in the raw data folder:
@@ -57,4 +57,4 @@ uv run python scripts/run_day3_build_analytics.py
 uv run jupyter lab
 ```
 ---
-2) then open the file located at week2-data-work\notebooks\eda.ipynb
+2) then open the file located at week2-data-work\notebooks\eda.ipynb and run it 
