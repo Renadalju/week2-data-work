@@ -57,4 +57,18 @@ uv run python scripts/run_day3_build_analytics.py
 uv run jupyter lab
 ```
 ---
+
 2) then open the file located at week2-data-work\notebooks\eda.ipynb and run it 
+
+---
+
+## Visualizations
+
+### Revenue by Country
+![Revenue by Country](reports/figures/revenue_by_country.png)
+
+### Revenue Over Time (Monthly)
+![Revenue Over Time](reports/figures/revenue_monthly.png)
+
+### Order Amount Distribution (Winsorized)
+![Order Amount Distribution](reports/figures/amount_distribution_winsorized.png)
