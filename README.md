@@ -2,13 +2,17 @@
 
 Week 2 data work project for loading, cleaning, and analyzing order data.
 
+
 ---
+
 
 ## Requirements
 - Python 3.11+
 - uv (fast Python package & environment manager)
 
+
 ---
+
 
 ## Create the Environment & Install Dependencies (uv sync)
 
@@ -17,13 +21,20 @@ Week 2 data work project for loading, cleaning, and analyzing order data.
 ```bash
 cd week2-data-work
 ```
+
+
 ---
+
 
 2) then:
 ```bash
 uv sync
 ```
+
+
 ---
+
+
 
 ## If you want to run the pipeline on NEW data:
 
@@ -47,7 +58,10 @@ uv run python scripts/run_day1_load.py
 uv run python scripts/run_day2_clean.py
 uv run python scripts/run_day3_build_analytics.py
 ```
+
+
 ---
+
 
 ## Jupyter Notebooks
 
@@ -56,17 +70,5 @@ uv run python scripts/run_day3_build_analytics.py
 ```bash 
 uv run jupyter lab notebooks 
 ```
-Follow the instructions and run 
+2) Follow the instructions and run 
 
----
-
-## Visualizations
-
-### Revenue by Country
-![Revenue by Country](reports/figures/revenue_by_country.png)
-
-### Revenue Over Time (Monthly)
-![Revenue Over Time](reports/figures/revenue_trend_monthly.png)
-
-### Order Amount Distribution (Winsorized)
-![Order Amount Distribution](reports/figures/amount_hist_winsor.png)
