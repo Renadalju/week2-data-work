@@ -25,8 +25,24 @@ uv sync
 ```
 ---
 
-3) Use uv run to execute Python inside the managed environment (no manual activation needed):
+3) If you want to run the pipeline on NEW data:
+
+### A) Add your new raw data
+Place your files in the raw data folder:
+
+- `data/raw/users.csv`
+- `data/raw/orders.csv`
+
+> Make sure the filenames match exactly, because the scripts expect these paths.
+
+### B) (Optional) Generate sample data
+If you want to generate a fresh dataset automatically:
 ```bash
+uv run python scripts/generate_data.py
+```
+
+### C) Run the pipeline scripts in order
+``` bash
 uv run python scripts/run_day1_load.py
 uv run python scripts/run_day2_clean.py
 uv run python scripts/run_day3_build_analytics.py
