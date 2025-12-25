@@ -56,6 +56,7 @@ uv run python scripts/run_day3_build_analytics.py
 ```bash 
 uv run jupyter lab notebooks 
 ```
+Follow the instructions and run 
 
 ---
 
