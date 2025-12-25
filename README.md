@@ -19,7 +19,7 @@ cd week2-data-work
 ```
 ---
 
-2) 
+2) then:
 ```bash
 uv sync
 ```
