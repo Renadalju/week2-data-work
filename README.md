@@ -23,8 +23,6 @@ cd week2-data-work
 ```
 
 
----
-
 
 2) then:
 ```bash
